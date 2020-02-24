@@ -10,7 +10,7 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 /**
- * @author manickamb
+ * @author Bharathidasan
  *
  */
 public class ListToMap {

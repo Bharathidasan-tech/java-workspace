@@ -4,7 +4,7 @@
 package com.bharathi;
 
 /**
- * @author manickamb
+ * @author Bharathidasan
  *
  */
 public class FunctionalInterfaceExampl {

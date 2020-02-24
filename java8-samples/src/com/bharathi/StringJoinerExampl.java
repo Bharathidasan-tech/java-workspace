@@ -6,7 +6,7 @@ package com.bharathi;
 import java.util.StringJoiner;
 
 /**
- * @author manickamb
+ * @author Bharathidasan
  *
  */
 public class StringJoinerExampl {
