@@ -4,10 +4,12 @@
 package com.bharathi;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
+
 
 /**
  * @author Bharathidasan
@@ -32,7 +34,7 @@ public class ListToMap {
 		 
 		 Map<Integer,String> userMap=userList.stream().collect(
 				 Collectors.toMap(UserVO::getUserid, UserVO::getUsername,
-						 (oldValue,newValue)->newValue)); 
+						 (oldValue,newValue)->newValue,HashMap::new)); 
 		 //To solve the duplicated key issue, use the third mergeFunction argument, if the key is duplicated, do we replace with old key  or new key?
 		 //if we not used the third mergeFunction argument, we will get the "java.lang.IllegalStateException: Duplicate key xxxxx" Exception.
 		 
